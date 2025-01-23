@@ -1,0 +1,21 @@
+[project]
+name = "python_chat"
+version = "0.1.0"
+description = "Chat Client using Websockets and gRPC"
+authors = [{"name"= "sjitb", "email"= "satrajit.87@gmail.com"}]
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies=[
+    "grpcio (>=1.69.0,<2.0.0)",
+    "grpcio-tools (>=1.69.0,<2.0.0)",
+    "websockets (>=14.2,<15.0)",
+    "protobuf (>=5.29.3,<6.0.0)"
+]
+
+[tool.poetry]
+package-mode = false
+
+[build-system]
+requires = ["poetry-core", "setuptools", "wheel"]
+build-backend = "poetry.core.masonry.api"
